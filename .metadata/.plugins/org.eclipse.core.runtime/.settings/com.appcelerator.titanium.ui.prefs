@@ -3,5 +3,7 @@ LAST_LAUNCH_TIMESTAMP=1393920441131
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103
+test2\:launchMode=package
+test2\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.module.launchShortcut
 test\:launchMode=run
 test\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.iPad
