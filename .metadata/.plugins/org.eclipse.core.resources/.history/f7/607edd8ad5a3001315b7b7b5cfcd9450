@@ -1,0 +1,28 @@
+//ui.js for simpleDemoApp
+//for avf1403 
+//on 3/4/2014
+//by Travis Mix
+//this code file will hold all of our code for the app.
+
+
+//create our window and give it a background color that is light grey
+var mainWin = Ti.UI.createWindow({
+	backgroundColor : "#909090"
+});
+
+//create our labels needed to meet the project requirements
+var lbl1 = Ti.UI.createLabel({
+	text : "Travis Mix",
+	font : {fontSize : 48}
+});
+
+var lbl2 = Ti.UI.createLabel({
+	text : "Avf 1403",
+	font : {fontSize : 36}
+});
+
+//add our views and labels and all that to our main window
+mainWin.add(lbl1);
+
+//open our main window
+mainWin.open();

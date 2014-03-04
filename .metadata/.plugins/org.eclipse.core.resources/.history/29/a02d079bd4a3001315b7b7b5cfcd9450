@@ -1,0 +1,9 @@
+//ui.js for simpleDemoApp
+//for avf1403 
+//on 3/4/2014
+//by Travis Mix
+//this code file will hold all of our code for the app.
+
+var mainWin = Ti.UI.createWindow({
+	backgroundColor : "#909090"
+});

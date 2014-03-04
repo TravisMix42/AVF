@@ -1,9 +1,12 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1393920441131
+Android\ Emulator\ Process\:ConsoleLogLevel=Info
+LAST_LAUNCH_TIMESTAMP=1393960451938
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103
+simpleDemoApp\:launchMode=run
+simpleDemoApp\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.simulator.launchShortcut.titanium_1_WVGA800
 test2\:launchMode=package
-test2\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.module.launchShortcut
+test2\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.package.adhoc.launchShortcut
 test\:launchMode=run
 test\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.iPad

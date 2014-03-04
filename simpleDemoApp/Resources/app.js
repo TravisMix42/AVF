@@ -1,0 +1,14 @@
+//simpleDemoApp
+//for avf1403 
+//on 3/4/2014
+//by Travis Mix
+//this app is a simple app that demonstrates that we are able to deploy 
+//to our iPad and android emulator--Android blows as well as its emulator
+//of course so does titanium.  If your paying attention this is my opinion
+//as was asked for during the go to training
+//this app needs to be a simple single page application that needs to include
+//my name and course month this is almost a waste of needing 2 code files as 
+//the app shouldnt even hit 50 lines of code. not counting comments.
+
+//include our ui.js
+Ti.include("ui.js");	//this is all I ever put in the app.js file to keep it clean.  Also I do not use exports or commonJS as it doesnt work half the time which is about par for titanium.
