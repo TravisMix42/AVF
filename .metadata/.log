@@ -511,3 +511,11 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/travismi
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
 !SUBENTRY 1 org.eclipse.ui 2 0 2014-03-06 13:31:46.439
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.aptana.git.core 4 0 2014-03-06 13:32:07.055
+!MESSAGE (Build 3.2.1.201402041146) [ERROR]  Unable to run update-index: 
+
+!ENTRY com.aptana.git.core 4 1 2014-03-06 13:32:07.202
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.core 4 128 2014-03-06 13:32:07.202
+!MESSAGE 
