@@ -14,8 +14,7 @@ var mainWin = Ti.UI.createWindow({
 //create our labels needed to meet the project requirements
 var lbl1 = Ti.UI.createLabel({
 	text : "Travis Mix",
-	color : "black",
-	font : {fontSize : 48},
+	font : {fontSize : 48, fontColor : "black"},
 	top : 0,
 	left : 20,
 	right : 20,
@@ -25,8 +24,7 @@ var lbl1 = Ti.UI.createLabel({
 
 var lbl2 = Ti.UI.createLabel({
 	text : "Avf 1403",
-	color : "black",
-	font : {fontSize : 36},
+	font : {fontSize : 36, fontColor : "black"},
 	bottom : 0, 
 	left : 20,
 	right : 20,
