@@ -1,0 +1,47 @@
+//compass.js for Native Features app
+//by Travis A. Mix
+//for AVF1403
+//on March 12, 2014
+
+//everythign in here will be applied to win2
+
+var compassLabel = new Object();
+var heading;
+
+var getCompassHeading = function(){
+	if (Ti.Geolocation.locationServicesEnabled) {
+    Ti.Geolocation.purpose = 'Get Current Heading';
+ 
+    // make a single request for the current heading
+    Ti.Geolocation.getCurrentHeading(function(e) {
+        Ti.API.info(e.heading);
+    });
+ 
+    // Set 'heading' event for continual monitoring
+    Ti.Geolocation.addEventListener('heading', function(e) {
+        if (e.error) {
+            alert('Error: ' + e.error);
+        } else {
+            Ti.API.info(e.heading);
+        }
+    });
+} else {
+    alert('Please enable location services');
+}
+};
+
+var compassBtn = Ti.UI.createButton({
+	title : "Get Heading",
+	color : "black",
+	backgroundColor : "green",
+	height : 80,
+	top : 120,
+	left : 80,
+	right : 80,
+	borderRadius : 10
+});
+
+compassBtn.addEventListener('click', function(){
+	compassLabel.text = "";
+	getCompassHeading();
+});

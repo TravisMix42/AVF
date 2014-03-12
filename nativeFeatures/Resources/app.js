@@ -25,15 +25,7 @@ var tab1 = Titanium.UI.createTab({
     window:win1
 });
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'Geolocation',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
-
-win1.add(label1);
+win1.add(refreshBtn);
 
 // tab 2 "Compass"
 var win2 = Titanium.UI.createWindow({  
@@ -46,15 +38,6 @@ var tab2 = Titanium.UI.createTab({
     window:win2
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'Compass',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
-
-win2.add(label2);
 
 //tab 3 "Camera"
 var win3 = Ti.UI.createWindow({
@@ -68,15 +51,7 @@ var tab3 = Ti.UI.createTab({
 	window : win3
 });
 
-var label3 = Ti.UI.createLabel({
-	color : '#999',
-	text : 'Camera',
-	font : {fontSize : 20, fontFamily: 'Helvetica Neue'},
-	textAlign : 'center',
-	width : 'auto'
-});
-
-win3.add(label3);
+win3.add(takePicBtn);
 
 //tab 4 "Network/LiveData"
 var win4 = Ti.UI.createWindow({

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.android.simulator.launchConfigurationType">
+<stringAttribute key="ATTR_LOG_LEVEL" value="Warning"/>
 <stringAttribute key="ATTR_PROJECT_NAME" value="nativeFeatures"/>
 <stringAttribute key="abi" value="armeabi-v7a"/>
 <stringAttribute key="device-id" value="titanium_1_WVGA800"/>
+<stringAttribute key="keystore_alias" value=""/>
+<stringAttribute key="keystore_password" value=""/>
+<stringAttribute key="keystore_path" value=""/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/nativeFeatures"/>
 </listAttribute>
