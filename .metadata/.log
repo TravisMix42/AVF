@@ -1905,3 +1905,59 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY org.eclipse.osgi 2 1 2014-03-12 05:29:36.683
 !MESSAGE NLS unused message: IOSConfigurationMessages_TestOnDevice_Title in: com.appcelerator.titanium.ios.ui.messages
+!SESSION 2014-03-12 23:57:41.260 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/travismix/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/travismix/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-03-12 23:58:06.587
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-03-12 23:58:14.500
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-03-12 23:58:14.500
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-03-12 23:58:14.500
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ios.core 4 402 2014-03-13 00:14:04.325
+!MESSAGE iOS SDK version 7.0.3 not found.
+
+!ENTRY com.appcelerator.titanium.ios.core 4 402 2014-03-13 00:14:35.083
+!MESSAGE iOS SDK version 7.0.3 not found.
+
+!ENTRY com.appcelerator.titanium.ios.core 4 402 2014-03-13 00:14:56.666
+!MESSAGE iOS SDK version 7.0.3 not found.
+
+!ENTRY com.appcelerator.titanium.ios.core 4 402 2014-03-13 00:15:08.470
+!MESSAGE iOS SDK version 7.0.3 not found.
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-13 00:22:09.172
+!MESSAGE NLS unused message: MobileUIPlugin_DefaultProjectTemplate_Description in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-13 00:22:09.172
+!MESSAGE NLS unused message: MobileUIPlugin_DefaultProjectTemplate_Name in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-13 00:22:09.173
+!MESSAGE NLS unused message: MobileUIPlugin_mobileUIInitializationJobName in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-13 00:22:09.173
+!MESSAGE NLS unused message: AdhocHandler_sdk_compatibility_title in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-13 00:22:09.173
+!MESSAGE NLS unused message: DistributeWizard_ErrorDialogTitle in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-13 00:22:09.173
+!MESSAGE NLS unused message: DistributeWizard_LaunchConfigurationFailed_Error in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-13 00:22:09.186
+!MESSAGE NLS unused message: IOSConfigurationMessages_TestOnDevice_Desc in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-13 00:22:09.186
+!MESSAGE NLS unused message: IOSConfigurationMessages_TestOnDevice_Title in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY com.appcelerator.titanium.ios.core 4 402 2014-03-13 00:23:28.647
+!MESSAGE iOS SDK version 7.0.3 not found.

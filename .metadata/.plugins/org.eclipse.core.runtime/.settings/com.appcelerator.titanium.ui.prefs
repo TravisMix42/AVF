@@ -1,12 +1,14 @@
 =run
 Android\ Emulator\ Process\:ConsoleLogLevel=Info
-LAST_LAUNCH_TIMESTAMP=1394619823896
+LAST_LAUNCH_TIMESTAMP=1394693970229
 eclipse.preferences.version=1
 hungry\:launchMode=run
 hungry\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (3.5 inch)
 iOS\ build\ and\ deploy\:ConsoleLogLevel=Debug
+nativeFeatures2.0\:launchMode=run
+nativeFeatures2.0\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
 nativeFeatures\:launchMode=run
-nativeFeatures\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.iPad
+nativeFeatures\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
 preference.show.console.onError=true
 preference.studio.perspective.version=103
 simpleDemoApp\:launchMode=run
