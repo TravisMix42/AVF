@@ -40,9 +40,9 @@ var getGeoCoords = function(){
 
 var refreshBtn = Ti.UI.createButton({
 	height : 80,
-	left : 80,
-	right : 80,
-	top : 220,
+	left : 20,
+	right : 20,
+	bottom : 20,
 	borderRadius : 10,
 	backgroundColor : 'green',
 	color : 'black',

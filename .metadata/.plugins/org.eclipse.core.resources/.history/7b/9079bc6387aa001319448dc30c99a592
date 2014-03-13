@@ -1,0 +1,23 @@
+//compass.js for Native Features app
+//by Travis A. Mix
+//for AVF1403
+//on March 12, 2014
+
+//everythign in here will be applied to win2
+
+
+var compassBtn = Ti.UI.createButton({
+	height : 80,
+	top : 20,
+	left : 20,
+	right : 20,
+	backgroundColor : 'green',
+	color : 'black',
+	title : "Start Compass"
+});
+
+var getCompass = function(){
+	
+};
+
+compassBtn.addEventListener('click', getCompass);

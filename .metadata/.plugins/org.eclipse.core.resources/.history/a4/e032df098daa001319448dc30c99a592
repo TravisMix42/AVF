@@ -1,0 +1,41 @@
+//network.js for Native Features app
+//by Travis A. Mix
+//for AVF1403
+//on March 12, 2014
+
+//everything in here will be applied to win4
+
+//pull the first event that is up currently in guildwars 2 and display it to the screen
+//make our button to pull the event
+var gw2EventBtn = Ti.UI.createButton({
+	title : "Get Guild Wars 2 event",
+	textAlign : 'center',
+	color : "black",
+	backgroundColor : 'green',
+	height : 80,
+	bottom : 20,
+	left : 20,
+	right : 20,
+	borderRadius : 10
+});
+
+var getEvent = function(){
+	if(!Ti.Network.online){
+		alert("no network available");
+	}else{
+		var data = Ti.Network.createHTTPClient();
+		data.onload = function(e){
+			var json = JSON.parse(this.responseText);
+			var name = json.name;
+			var eventLbl = Ti.UI.createLabel({
+				height : 80,
+				top : 20,
+				left : 20,
+				right : 20,
+				text : name
+			});
+		};
+	}
+};
+
+gw2EventBtn.addeventListener('click', getEvent);

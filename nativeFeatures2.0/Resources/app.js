@@ -38,6 +38,7 @@ var tab2 = Titanium.UI.createTab({
     window:win2
 });
 
+win2.add(compassBtn);
 
 //tab 3 "Camera"
 var win3 = Ti.UI.createWindow({
@@ -65,15 +66,7 @@ var tab4 = Ti.UI.createTab({
 	window : win4
 });
 
-var label4 = Ti.UI.createLabel({
-	color : "#999",
-	text : "Network and Live Data",
-	font : {fontSize : 20, fontFamily : 'Helvetica Neue'},
-	textAlign : 'center',
-	width : 'auto'
-});
-
-win4.add(label4);
+win4.add(redditGetBtn);
 
 //  add tabs
 tabGroup.addTab(tab1);  

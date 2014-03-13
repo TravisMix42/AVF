@@ -29,16 +29,7 @@ takePicBtn.addEventListener('click', function(e){
 					image: e.media
 				});
 				win3.add(img);
-			} else {
-				alert("thought this was a photo but, it's:" + e.mediaType);
-			}
-		},
-		error: function(error) {
-			if (error.code == Ti.Media.NO_CAMERA) {
-				alert("please run this on a device");
-			} else {
-				alert("other error: " + error.code);
-			}
+			} 
 		}
 	});
 });

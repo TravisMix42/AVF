@@ -7,6 +7,7 @@
 <stringAttribute key="certificate" value="Jennifer McCarrick (VET4496F2Z)"/>
 <stringAttribute key="debug_config" value="::1394695756590:10.0.0.2"/>
 <stringAttribute key="debug_hosts" value="10.0.0.2"/>
+<stringAttribute key="device_id" value="1bd05020e9875472ea955979d25c5f88c627e4f0"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/nativeFeatures2.0"/>
 </listAttribute>
