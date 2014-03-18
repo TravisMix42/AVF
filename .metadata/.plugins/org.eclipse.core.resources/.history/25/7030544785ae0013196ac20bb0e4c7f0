@@ -1,0 +1,8 @@
+//datasync project
+//avf1403
+//Travis Mix
+//March 18, 2013
+
+var Cloud = require("Ti.cloud");
+
+
