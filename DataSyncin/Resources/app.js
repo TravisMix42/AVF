@@ -5,6 +5,9 @@
 
 var Cloud = require("Ti.cloud");
 
+Ti.include("main.js");
+
+//login to the acs cloud services
 (function() { 
 	// load the Cloud Module
 	var Cloud = require('ti.cloud');
@@ -30,3 +33,4 @@ var Cloud = require("Ti.cloud");
 	loginUser();
 	// now your app is ready to access ACS network and data services
 })();
+
