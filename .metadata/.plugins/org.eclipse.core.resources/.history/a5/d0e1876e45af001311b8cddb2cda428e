@@ -122,8 +122,7 @@ var createRows = function(){
 			text : "Name: " + name,
 			font : {fontSize : 12},
 			left : 10,
-			top : 0,
-			color : "black"
+			top : 0
 		});
 		
 		row.add(lbl1);

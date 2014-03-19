@@ -1,8 +1,8 @@
 =run
 Android\ Emulator\ Process\:ConsoleLogLevel=Info
 DataSyncin\:launchMode=run
-DataSyncin\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut.LG-LG870-a2b8dc3
-LAST_LAUNCH_TIMESTAMP=1395217882643
+DataSyncin\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
+LAST_LAUNCH_TIMESTAMP=1395219323246
 eclipse.preferences.version=1
 hungry\:launchMode=run
 hungry\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (3.5 inch)

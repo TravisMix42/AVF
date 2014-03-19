@@ -59,32 +59,28 @@ var cloudRtv = function(){
 					text : place.name,
 					font : {fontSize : 12},
 					left : 10,
-					top : 0,
-					color : "black"
+					top : 0
 				});
 				
 				var lblAddress = Ti.UI.createLabel({
 					text : place.address,
 					font : {fontSize : 10},
 					left : 10,
-					top : 14,
-					color : "black"
+					top : 14
 				});
 				
 				var lblCity = Ti.UI.createLabel({
 					text : place.city,
 					font : {fontSize : 10},
 					left : 10,
-					top : 28,
-					color : "black"
+					top : 28
 				});
 				
 				var lblState = Ti.UI.createLabel({
 					text : place.state,
 					font : {fontSize : 10},
 					left : 10,
-					top : 42,
-					color : "black"
+					top : 42
 				});
 				row2.add(lblName);
 				row2.add(lblAddress);
@@ -122,8 +118,7 @@ var createRows = function(){
 			text : "Name: " + name,
 			font : {fontSize : 12},
 			left : 10,
-			top : 0,
-			color : "black"
+			top : 0
 		});
 		
 		row.add(lbl1);
