@@ -3,6 +3,9 @@
 //Travis Mix
 //march 18, 2014
 
+//include our functions
+Ti.include("functions.js");
+
 //add our data entry fields
 
 //our location entry fields
@@ -67,6 +70,13 @@ var syncBtn = Ti.UI.createButton({
 	textAlign : 'center'
 });
 
+
+
+
 syncBtn.addEventListener('click', function(){
 	Ti.API.info('button clicked');
+	updateLocal();
+	updateCloud();
 });
+
+

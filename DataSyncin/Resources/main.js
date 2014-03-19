@@ -5,6 +5,8 @@
 
 //import other code files
 Ti.include("DataIn.js");
+Ti.include("localView.js");
+Ti.include("cloudView.js");
 
 //create our 3 tabs we need one for user entry one for 
 //local saved data view and one for cloud data viewing
@@ -47,6 +49,8 @@ var tab2 = Titanium.UI.createTab({
     window:win2
 });
 
+win2.add(table1);
+
 /////////////////////////////////////////////////////////////////////////////////////////
 //tab3 cloud storage view
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -59,6 +63,9 @@ var tab3 = Titanium.UI.createTab({
     title:'Cloud View',
     window:win3
 });
+
+win3.add(superView);
+win3.add(cloudRtvBtn);
 
 /////////////////////////////////////////////////////////////////////////////////////////
 //add our tabs to our tabGroup

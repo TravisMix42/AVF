@@ -1,0 +1,74 @@
+//functions.js file for datasyncin app
+//avf 1403 week 3
+//Travis Mix
+//march 18, 2014
+
+//store our functions needed that dont really fit anywhere else in the app
+
+
+//vars 
+var rows;
+var name;
+var email;
+var phone;
+var id;
+var row;
+
+//function to update and store newly added data to the local
+//storage to be displayed in the local view tab of the app
+var updateLocal = function(){
+	//were just gonna store the name of the locations
+	//in local storage for simplicities sake
+	db = Ti.Database.open('myDb');
+	db.execute('INSERT INTO places(name) VALUES (?)', nameEnter.value);
+	db.close();
+	createRows();
+};
+
+//function to update and stor newly added data to the cloud
+var updateCloud = function(){
+	Cloud.Places.create({
+		name : nameEnter.value,
+		address : addressEnter.value,
+		city : cityEnter.value,
+		state : stateEnter.value
+	}, function(e){
+		if(e.success){
+			var place = e.places[0];
+		}else{
+			alert("Error:\n" + ((e.error && e.message) || JSON.stringify(e)));
+		}
+	});
+};
+
+//initialize our rows
+var createRows = function(){
+	var rowData = [];
+	
+	//open our database
+	var db = Ti.Database.open('myDb');
+	//get info from database
+	rows = db.execute('SELECT * FROM places');
+	
+	while(rows.isValidRow()){
+		name = rows.fieldByName('name');
+		id = rows.fieldByName('id');
+		
+		row = Ti.UI.createTableViewRow({
+			height : 'auto',
+			id : id
+		});
+		
+		var lbl1 = Ti.UI.createLabel({
+			text : "Name: " + name,
+			font : {fontSize : 12},
+			left : 10,
+			top : 0
+		});
+		
+		row.add(lbl1);
+		rowData.push(row);
+		rows.next();
+	}
+	table1.setData(rowData);
+};

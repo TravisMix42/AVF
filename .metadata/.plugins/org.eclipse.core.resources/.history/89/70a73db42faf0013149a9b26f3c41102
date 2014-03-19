@@ -1,0 +1,21 @@
+//localView.js file for datasyncin app
+//avf 1403 week 3
+//Travis Mix
+//march 18, 2014
+
+//create our button that will pull data from the cloud to the device
+var cloudRtvBtn = Ti.UI.createButton({
+	title : "Get Cloud Data",
+	color : "black",
+	backgroundColor : "green",
+	height : '80dp',
+	bottom : '20dp',
+	left : '20dp',
+	right : '20dp',
+	borderRadius : 10,
+	textAlign : "center"
+});
+
+cloudRtvBtn.addEventListener('click', function(){
+	Ti.API.info("cloud btn clicked");
+});

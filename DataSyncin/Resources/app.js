@@ -4,8 +4,16 @@
 //March 18, 2013
 
 var Cloud = require("Ti.cloud");
+Cloud.debug = true;
 
 Ti.include("main.js");
+
+//create our database for local storage
+var db = Ti.Database.open('myDb');
+db.execute('CREATE TABLE IF NOT EXISTS places(id INTEGER PRIMARY KEY, name TEXT)');
+db.close();
+
+updateLocal();
 
 //login to the acs cloud services
 (function() { 

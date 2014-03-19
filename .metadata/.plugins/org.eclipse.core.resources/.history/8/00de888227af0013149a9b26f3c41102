@@ -1,0 +1,19 @@
+//functions.js file for datasyncin app
+//avf 1403 week 3
+//Travis Mix
+//march 18, 2014
+
+//store our functions needed that dont really fit anywhere else in the app
+
+//function to update and store newly added data to the local
+//storage to be displayed in the local view tab of the app
+var updateLocal = function(){
+	//were just gonna store the name of the locations
+	//in local storage for simplicities sake
+	
+};
+
+//function to update and stor newly added data to the cloud
+var updateCloud = function(){
+	
+};
