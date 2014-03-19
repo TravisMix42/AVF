@@ -74,6 +74,7 @@ var syncBtn = Ti.UI.createButton({
 
 
 syncBtn.addEventListener('click', function(){
+	Ti.API.info('button clicked');
 	updateLocal();
 	updateCloud();
 });

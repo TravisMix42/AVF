@@ -5,4 +5,6 @@
 
 //this code file handles all our code for the local view tab
 
-var table1 = Ti.UI.createTableView({});
+var table1 = Ti.UI.createTableView({
+	
+});

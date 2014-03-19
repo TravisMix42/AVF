@@ -27,6 +27,7 @@ var superView = Ti.UI.createView({
 var table2 = Ti.UI.createTableView();
 
 cloudRtvBtn.addEventListener('click', function(){
+	Ti.API.info("cloud btn clicked");
 	cloudRtv();
 });
 superView.add(table2);
