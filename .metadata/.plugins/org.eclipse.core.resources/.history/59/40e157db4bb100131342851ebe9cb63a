@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">qjx9ftjJ7yxrXk8m3Or9CAamfoib89Wg</property>
+    <property name="acs-oauth-key-production" type="string">Cle3pi9UUkGPYPJtSpCV1DX2hKWEzE1L</property>
+    <property name="acs-api-key-production" type="string">u3InA8nLXcXvfbiL5BrIGxrXikJlRl8f</property>
+    <property name="acs-oauth-secret-development" type="string">almrs7AbaYH06c7JEgeADYKAj4UFs4Yi</property>
+    <property name="acs-oauth-key-development" type="string">ORiIFlZPA33IjoWMoJ7gMvcPtFPJEkDc</property>
+    <property name="acs-api-key-development" type="string">xP11TNiWnoRmKWytv5lWUsT0GvCW4L8x</property>
+    <id>com.fullsail.demoApp</id>
+    <name>Photo Spammer</name>
+    <version>1.0</version>
+    <publisher>travismix</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2014 by travismix</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>a007ccdd-7149-4034-99b2-9edca17a94d2</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">true</target>
+        <target device="iphone">false</target>
+        <target device="mobileweb">false</target>
+        <target device="tizen">false</target>
+    </deployment-targets>
+    <sdk-version>3.2.2.GA</sdk-version>
+</ti:app>

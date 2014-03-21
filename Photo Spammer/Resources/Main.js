@@ -5,11 +5,17 @@
 
 /*
  This file will be responsible for handiling all the main
- UI code for the camera / Photo Gallery screen of the app
+ UI code for the camera / map view screen of the app
  */
 
 //include any needed code files here
 Ti.include("Camera.js");
+Ti.include("Geo.js");
+Ti.include("functions.js");
+
+
+//require map module
+var Map = require("ti.map");
 
 //create our main window
 var mainWin = Ti.UI.createWindow({
@@ -18,7 +24,7 @@ var mainWin = Ti.UI.createWindow({
 
 //title for the page doing it this way to prevent needless code to do the same thing
 var titleLbl = Ti.UI.createLabel({
-	text : "Photo Gallery",
+	text : "Photo Map",
 	top : "20dp",
 	height : "30dp",
 	left : "0dp",
@@ -29,12 +35,12 @@ var titleLbl = Ti.UI.createLabel({
 });
 
 //create our main photoGallery view
-var mainView = Ti.UI.createView({
+var mainView = Map.createView({
+	mapType : Map.NORMAL_TYPE,
 	top : "50dp",
 	left : "0dp",
 	right : "0dp",
 	bottom : "100dp",
-	backgroundColor : "#fff"
 });
 
 //create our button to allow the user to take a photo
@@ -52,7 +58,8 @@ var photoButton = Ti.UI.createButton({
 //take photo button event listener
 photoButton.addEventListener("click", function(){
 	Ti.API.info("photo button clicked");
-	takePic();
+	getGeo();	//code for this function is in Geo.js
+	takePic();	//code for this function is in Camera.js
 });
 
 //add all our parts to the mainWin
