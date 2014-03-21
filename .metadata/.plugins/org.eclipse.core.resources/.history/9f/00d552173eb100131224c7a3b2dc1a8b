@@ -21,12 +21,11 @@ Cloud.debug = true;
 //login to the cloud and check for errors
 (function() { 
 	var loginUser = function(){
-		//log the app into the cloud
 		Cloud.Users.login({
 			login: 'com.fullsail.demoApp',
 			password: '12345'
 		}, function(e){
-			//log success
+			// use .info method to view login info in the Console, if successful
 			if (e.success){
 				var user = e.users[0];
 				Ti.API.info('Success!\n' + 
@@ -34,7 +33,6 @@ Cloud.debug = true;
 					'ACS App sessionId: ' + Cloud.sessionId + '\n' + 
 					'ACS App Username: ' + user.username);
 			} else {
-				//return an error message
 				alert((e.error && e.message) || JSON.stringify(e));
 			}
 		});

@@ -1,0 +1,15 @@
+//Photo Spammer Main.js file
+//Week 4 final app for AVF1403
+//March 21, 2014
+//Travis Mix
+
+/*
+ This file will be responsible for handiling all the main
+ UI code for the camera / Photo Gallery screen of the app
+ */
+
+//create our main window
+var mainWin = Ti.UI.createWindow({
+	title : "Photo Gallery"
+});
+
