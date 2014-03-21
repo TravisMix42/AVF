@@ -4,7 +4,6 @@
 //March 18, 2013
 
 var Cloud = require("ti.cloud");
-Cloud.debug = true;
 
 Ti.include("main.js");
 
