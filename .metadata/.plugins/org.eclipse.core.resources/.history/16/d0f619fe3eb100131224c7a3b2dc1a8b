@@ -52,7 +52,6 @@ var photoButton = Ti.UI.createButton({
 //take photo button event listener
 photoButton.addEventListener("click", function(){
 	Ti.API.info("photo button clicked");
-	takePic();
 });
 
 //add all our parts to the mainWin

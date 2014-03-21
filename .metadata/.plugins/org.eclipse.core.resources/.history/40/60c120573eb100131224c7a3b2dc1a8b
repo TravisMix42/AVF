@@ -8,9 +8,6 @@
  UI code for the camera / Photo Gallery screen of the app
  */
 
-//include any needed code files here
-Ti.include("Camera.js");
-
 //create our main window
 var mainWin = Ti.UI.createWindow({
 	backgroundColor : "#909090"
@@ -52,7 +49,6 @@ var photoButton = Ti.UI.createButton({
 //take photo button event listener
 photoButton.addEventListener("click", function(){
 	Ti.API.info("photo button clicked");
-	takePic();
 });
 
 //add all our parts to the mainWin

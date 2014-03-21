@@ -9,7 +9,7 @@
  */
 
 //include any needed code files here
-Ti.include("Camera.js");
+
 
 //create our main window
 var mainWin = Ti.UI.createWindow({
@@ -52,7 +52,6 @@ var photoButton = Ti.UI.createButton({
 //take photo button event listener
 photoButton.addEventListener("click", function(){
 	Ti.API.info("photo button clicked");
-	takePic();
 });
 
 //add all our parts to the mainWin

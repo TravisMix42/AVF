@@ -6,7 +6,7 @@
     <property name="acs-oauth-secret-development" type="string">almrs7AbaYH06c7JEgeADYKAj4UFs4Yi</property>
     <property name="acs-oauth-key-development" type="string">ORiIFlZPA33IjoWMoJ7gMvcPtFPJEkDc</property>
     <property name="acs-api-key-development" type="string">xP11TNiWnoRmKWytv5lWUsT0GvCW4L8x</property>
-    <id>com.fullsail.demoApp</id>
+    <id>com.fullsail.demoapp</id>
     <name>Photo Spammer</name>
     <version>1.0</version>
     <publisher>travismix</publisher>

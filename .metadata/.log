@@ -2758,3 +2758,27 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/travismi
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
 !SUBENTRY 1 org.eclipse.ui 2 0 2014-03-21 12:40:34.984
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-21 14:24:04.400
+!MESSAGE NLS unused message: MobileUIPlugin_DefaultProjectTemplate_Description in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-21 14:24:04.479
+!MESSAGE NLS unused message: MobileUIPlugin_DefaultProjectTemplate_Name in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-21 14:24:04.479
+!MESSAGE NLS unused message: MobileUIPlugin_mobileUIInitializationJobName in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-21 14:24:04.480
+!MESSAGE NLS unused message: AdhocHandler_sdk_compatibility_title in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-21 14:24:04.480
+!MESSAGE NLS unused message: DistributeWizard_ErrorDialogTitle in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-21 14:24:04.480
+!MESSAGE NLS unused message: DistributeWizard_LaunchConfigurationFailed_Error in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-21 14:24:04.480
+!MESSAGE NLS unused message: IOSConfigurationMessages_TestOnDevice_Desc in: com.appcelerator.titanium.ios.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-03-21 14:24:04.480
+!MESSAGE NLS unused message: IOSConfigurationMessages_TestOnDevice_Title in: com.appcelerator.titanium.ios.ui.messages
