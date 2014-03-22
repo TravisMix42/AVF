@@ -3,6 +3,9 @@
 <stringAttribute key="ATTR_PROJECT_NAME" value="Photo Spammer"/>
 <stringAttribute key="abi" value="armeabi-v7a"/>
 <stringAttribute key="device-id" value="LG-LG870-a2b8dc3"/>
+<stringAttribute key="keystore_alias" value=""/>
+<stringAttribute key="keystore_password" value=""/>
+<stringAttribute key="keystore_path" value=""/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/Photo Spammer"/>
 </listAttribute>

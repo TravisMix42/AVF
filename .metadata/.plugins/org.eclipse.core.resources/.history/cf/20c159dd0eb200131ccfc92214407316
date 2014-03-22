@@ -1,0 +1,46 @@
+//Photo Spammer Camera.js file
+//Week 4 final app for AVF1403
+//March 21, 2014
+//Travis Mix
+
+//This file is responsible for handiling the camera 
+
+//access the camera to take the picture
+var takePic = function(){
+	Ti.Media.showCamera({
+		saveToPhotoGallery: true,
+		allowEditing: false,
+		mediaTypes: [Ti.Media.MEDIA_TYPE_PHOTO],
+		success: function(e) {
+	 		if(e.mediaType == Ti.Media.MEDIA_TYPE_PHOTO) {
+	 			var createPlaceInfoWin = Ti.UI.createWindow({
+	 				modal : true
+	 			});
+	 			
+	 			nameField = Ti.UI.createTextView({
+	 				top : "100dp",
+	 				left : "20dp",
+	 				right : "20dp",
+	 				height : "40dp",
+	 				hintText : "Name Your Photo",
+	 				textAlign : "center"
+	 			});
+	 			
+	 			createPlaceInfoWin.add(nameField);
+	 			createPlaceInfoWin.open();
+				Cloud.Places.create({
+					name : nameField.value
+				});
+			} else {
+				alert("Not a photo but a " + e.mediaType);
+			}
+		},
+		error: function(error) {
+			if (error.code == Ti.Media.NO_CAMERA) {
+				alert("please run this on a device with a camera");
+			} else {
+				alert("other error: " + error.code);
+			}
+		}
+	});
+};

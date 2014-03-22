@@ -1,0 +1,1 @@
+Ti.include("functions.js");var geoLat,geoLong,getGeo=function(){Ti.Geolocation.purpose="Your location is needed to gather lat/long coords.",Ti.Geolocation.getCurrentPosition(function(e){geoLat=e.coords.latitude,geoLong=e.coords.longitude,Ti.API.info("lat: "+geoLat+" long: "+geoLong)})};
