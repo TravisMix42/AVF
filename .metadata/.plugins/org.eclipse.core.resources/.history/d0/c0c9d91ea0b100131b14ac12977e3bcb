@@ -27,6 +27,7 @@ var titleLbl = Ti.UI.createLabel({
 	left : "0dp",
 	right : "0dp",
 	color : "black",
+	backgroundColor : "#fff",
 	font : {fontSize : "24dp", fontWeight : "bold"},
 	textAlign : "center"
 });
@@ -37,7 +38,6 @@ var mainView = Ti.UI.createView({
 	left : "0dp",
 	right : "0dp",
 	bottom : "100dp",
-	backgroundColor : "#fff"
 });
 
 //create our button to allow the user to take a photo

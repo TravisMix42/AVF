@@ -20,7 +20,7 @@ var takePic = function(){
 				});
 				mainView.add(img); 
 			} else {
-				alert("Not a photo but a " + e.mediaType);
+				alert("not a photo but a " + e.mediaType);
 			}
 		},
 		error: function(error) {

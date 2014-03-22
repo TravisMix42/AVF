@@ -37,7 +37,6 @@ var mainView = Ti.UI.createView({
 	left : "0dp",
 	right : "0dp",
 	bottom : "100dp",
-	backgroundColor : "#fff"
 });
 
 //create our button to allow the user to take a photo

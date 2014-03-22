@@ -8,7 +8,7 @@
 //access the camera to take the picture
 var takePic = function(){
 	Ti.Media.showCamera({
-		saveToPhotoGallery: true,
+		saveToPhotoGallery: false,
 		allowEditing: false,
 		mediaTypes: [Ti.Media.MEDIA_TYPE_PHOTO],
 		success: function(e) {
@@ -20,7 +20,7 @@ var takePic = function(){
 				});
 				mainView.add(img); 
 			} else {
-				alert("Not a photo but a " + e.mediaType);
+				alert("thought this was a photo but, it's:" + e.mediaType);
 			}
 		},
 		error: function(error) {

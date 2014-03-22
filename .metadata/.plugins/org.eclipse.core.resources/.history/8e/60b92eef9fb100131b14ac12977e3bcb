@@ -21,7 +21,7 @@ var mainWin = Ti.UI.createWindow({
 
 //title for the page doing it this way to prevent needless code to do the same thing
 var titleLbl = Ti.UI.createLabel({
-	text : "Photo Gallery",
+	text : "Photo Map",
 	top : "20dp",
 	height : "30dp",
 	left : "0dp",
@@ -37,7 +37,6 @@ var mainView = Ti.UI.createView({
 	left : "0dp",
 	right : "0dp",
 	bottom : "100dp",
-	backgroundColor : "#fff"
 });
 
 //create our button to allow the user to take a photo

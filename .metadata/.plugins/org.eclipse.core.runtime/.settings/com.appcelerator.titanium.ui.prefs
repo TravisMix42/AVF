@@ -2,7 +2,7 @@
 Android\ Emulator\ Process\:ConsoleLogLevel=Info
 DataSyncin\:launchMode=run
 DataSyncin\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
-LAST_LAUNCH_TIMESTAMP=1395440425757
+LAST_LAUNCH_TIMESTAMP=1395477937147
 Photo\ Spammer\:launchMode=run
 Photo\ Spammer\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.simulator.launchShortcut.androidEmulatorForTesting
 eclipse.preferences.version=1
