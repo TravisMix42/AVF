@@ -2,8 +2,6 @@
 //Travis Mix
 //march 23, 2014
 
-//add needed files
-Ti.include("add.js");
 var Map = require('ti.map');
 
 //create our main window
@@ -36,7 +34,7 @@ var mainView = Ti.UI.createView({
 //create our map view 
 var mapView = Map.createView({
     mapType : Map.NORMAL_TYPE,
-    userLocation : false
+    userLocation : true
 });
 
 //create our add button
@@ -61,5 +59,5 @@ mainView.add(mapView);
 
 //add our event listeners 
 addBtn.addEventListener("click", function(){
-	addWin.open();
+	Ti.API.info("You clicked the add Button");
 });

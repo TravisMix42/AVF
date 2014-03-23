@@ -1,0 +1,9 @@
+//add.js for where you at app
+//Travis Mix
+//march 23, 2014
+
+//create our add window
+var addWin = Ti.UI.createWindow({
+	backgroundColor : "#fff"
+});
+

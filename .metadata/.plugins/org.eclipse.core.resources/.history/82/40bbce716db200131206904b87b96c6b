@@ -62,4 +62,5 @@ mainView.add(mapView);
 //add our event listeners 
 addBtn.addEventListener("click", function(){
 	addWin.open();
+	//mainWin.close();
 });

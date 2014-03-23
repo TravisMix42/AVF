@@ -36,7 +36,7 @@ var mainView = Ti.UI.createView({
 //create our map view 
 var mapView = Map.createView({
     mapType : Map.NORMAL_TYPE,
-    userLocation : false
+    userLocation : true
 });
 
 //create our add button
@@ -61,5 +61,5 @@ mainView.add(mapView);
 
 //add our event listeners 
 addBtn.addEventListener("click", function(){
-	addWin.open();
+	Ti.API.info("You clicked the add Button");
 });
