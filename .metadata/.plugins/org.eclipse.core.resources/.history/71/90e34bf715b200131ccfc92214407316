@@ -1,0 +1,65 @@
+//Where You At Main.js
+//this is the controller file for app
+//as well as the main interface
+//it controls the flow of the app
+//March 22,2013
+//AVF1403
+
+//create our main window
+var mainWin = Ti.UI.createWindow({
+	backgroundColor : "#fff"
+});
+
+//create our mainView
+var mainView = Ti.UI.createView({
+	backgroundColor : "#fff",
+	top : "60dp",
+	bottom : "80dp"
+});
+
+//create our title label
+var titleView = Ti.UI.createLabel({
+	top : "20dp",
+	height : "40dp",
+	text : "Where You At?",
+	font : {fontSize : "36dp", fontWeight : "bold"},
+	textAlign : 'center',
+	color : "black",
+	backgroundColor : "#fff"
+});
+
+//create our button to store location to cloud / local storage
+var syncBtn = Ti.UI.createButton({
+	right : "20dp",
+	height : "60dp",
+	width : "250dp",
+	bottom : "20dp",
+	backgroundColor : "green",
+	color : "#fff",
+	title : "sync/store",
+	textAlign : "center",
+	borderRadius : 10
+});
+
+//create our button to add a new location
+var addBtn = Ti.UI.createButton({
+	left : "20dp",
+	height : "60dp",
+	width : "250dp",
+	bottom : "20dp",
+	backgroundColor : "green",
+	color : "#fff",
+	title : "sync/store",
+	textAlign : "center",
+	borderRadius : 10
+});
+
+
+//add all needed files to the main window
+mainWin.add(titleView);
+mainWin.add(mainView);
+mainWin.add(syncBtn);
+mainWin.add(addBtn);
+
+
+//event listeners

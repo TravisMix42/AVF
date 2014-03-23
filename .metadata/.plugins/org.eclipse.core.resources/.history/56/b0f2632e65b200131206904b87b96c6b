@@ -1,0 +1,24 @@
+//main.js for where you at app
+//Travis Mix
+//march 23, 2014
+
+//create our main window
+var mainWin = Ti.UI.createWindow({
+	backgroundColor : "#fff"
+});
+
+//create our title view
+var titleLbl = Ti.UI.createLabel({
+	top : "20dp",
+	height : "50dp",
+	left : "0dp",
+	right : "0dp",
+	title : "Where You At",
+	textAlign : "center",
+	font : {fontSize : "30dp", fontWeight : "bold"},
+	color : "black",
+	backgroundColor : "#fff"
+});
+
+
+//add our window elements

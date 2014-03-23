@@ -3,7 +3,7 @@
 <stringAttribute key="ATTR_LOG_LEVEL" value="Info"/>
 <stringAttribute key="ATTR_PROJECT_NAME" value="simpleDemoApp"/>
 <stringAttribute key="abi" value="armeabi-v7a"/>
-<stringAttribute key="device-id" value="titanium_1_WVGA800"/>
+<stringAttribute key="device-id" value="androidEmulatorForTesting"/>
 <stringAttribute key="keystore_alias" value=""/>
 <stringAttribute key="keystore_password" value=""/>
 <stringAttribute key="keystore_path" value=""/>

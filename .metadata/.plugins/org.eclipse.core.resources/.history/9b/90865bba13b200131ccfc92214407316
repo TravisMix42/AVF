@@ -1,0 +1,15 @@
+//Where You At Main.js
+//this is the controller file for app
+//as well as the main interface
+//it controls the flow of the app
+//March 22,2013
+//AVF1403
+
+//create our main window
+var mainWin = Ti.UI.createWindow({
+	backgroundColor : "#fff"
+});
+
+//add all needed files to the main window
+
+//event listeners
