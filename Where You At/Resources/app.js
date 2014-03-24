@@ -7,12 +7,16 @@
 //include needed files
 Ti.include("main.js");
 
+//create our database for local storage
+var db = Ti.Database.open('myDb');
+db.execute('CREATE TABLE IF NOT EXISTS places(id INTEGER PRIMARY KEY, name TEXT, why TEXT, facing TEXT, lat INTEGER, lng INTEGER)');
+db.close();
+
+var Cloud = require('ti.cloud');
+Cloud.debug = true;
+
 //login to acs 
 (function() { 
-	// load the Cloud Module
-	var Cloud = require('ti.cloud');
-	// set .debug property to 'true' as we are in Development mode
-	Cloud.debug = true;
 	var loginUser = function(){
 		Cloud.Users.login({
 			login: 'WhereUAt',
@@ -33,6 +37,8 @@ Ti.include("main.js");
 	loginUser();
 	// now your app is ready to access ACS network and data services
 })();
+
+getInfo();
 
 //open our main window
 mainWin.open();

@@ -4,7 +4,10 @@
 
 //add needed files
 Ti.include("add.js");
+Ti.include("functions.js");
 var Map = require('ti.map');
+
+var annos;
 
 //create our main window
 var mainWin = Ti.UI.createWindow({
@@ -36,18 +39,30 @@ var mainView = Ti.UI.createView({
 //create our map view 
 var mapView = Map.createView({
     mapType : Map.NORMAL_TYPE,
-    userLocation : false
+    userLocation : true
 });
 
 //create our add button
 var addBtn = Ti.UI.createButton({
 	bottom : "10dp",
-	left : "20dp",
+	width : "200dp",
 	right : "20dp",
 	height : "60dp",
 	color : "#fff",
 	backgroundColor : "green",
-	title : "Add Location",
+	title : "Add",
+	textAlign : "center",
+	borderRadius : 10
+});
+
+var syncBtn = Ti.UI.createButton({
+	bottom : "10dp",
+	left : "20dp",
+	width : "200dp",
+	height : "60dp",
+	color : "#fff",
+	backgroundColor : "green",
+	title : "Get",
 	textAlign : "center",
 	borderRadius : 10
 });
@@ -57,9 +72,15 @@ var addBtn = Ti.UI.createButton({
 mainWin.add(titleLbl);
 mainWin.add(mainView);
 mainWin.add(addBtn);
+mainWin.add(syncBtn);
 mainView.add(mapView);
 
 //add our event listeners 
 addBtn.addEventListener("click", function(){
+	getInfo();
 	addWin.open();
+});
+
+syncBtn.addEventListener("click", function(){
+	getInfo();
 });

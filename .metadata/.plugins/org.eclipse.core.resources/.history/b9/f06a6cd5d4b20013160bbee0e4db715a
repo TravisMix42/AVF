@@ -1,0 +1,33 @@
+//functions.js for where you at app
+//Travis Mix
+//march 23, 2014
+
+//vars for functions.js
+var lat;
+var lng;
+var head;
+
+var sndToCloud = function(){
+	//get our long lat and compass info
+	Ti.Geolocation.purpose = "Your location information is needed to place you on the map.";
+	Ti.Geolocation.getCurrentPosition(function(e){
+		lat = e.coords.latitude;
+		lng = e.coords.longitude;
+		Ti.Geolocation.getCurrentHeading(function(e){
+			head = e.heading.trueHeading;
+			Ti.API.info(" head: " + e.heading.trueHeading);	
+		});
+		
+		//send to the cloud
+		//Cloud.Places.create({
+			//name : nameTxtField.value,
+			//address : addressTxtField.value,
+			//city : whyTxtField.value,
+			//state : ,
+			//latitude : ,
+			//longitude : 
+		//});
+	});
+	
+	
+};

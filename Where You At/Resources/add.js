@@ -2,6 +2,9 @@
 //Travis Mix
 //march 23, 2014
 
+//include needed files
+Ti.include("functions.js");
+
 //create our add window
 var addWin = Ti.UI.createWindow({
 	backgroundColor : "#fff",
@@ -36,7 +39,7 @@ var infoLbl = Ti.UI.createLabel({
 	left : "20dp",
 	right : "20dp",
 	height : "auto",
-	text : "Enter information to store with the location you are saving",
+	text : "Enter information to store with the location you are saving \n You must add a name",
 	font : {fontSize : "20dp"},
 	textAlign : "center",
 	color : "black",
@@ -48,18 +51,6 @@ var nameTxtField = Ti.UI.createTextField({
 	hintText : "Name",
 	borderRadius : 10,
 	textAlign : "center",
-	top : "100dp",
-	left : "20dp",
-	right : "20dp",
-	height : "40dp",
-	color : "black",
-	backgroundColor : "#909090"
-});
-
-var addressTxtField = Ti.UI.createTextField({
-	hintText : "Address",
-	borderRadius : 10,
-	textAlign : "center",
 	top : "160dp",
 	left : "20dp",
 	right : "20dp",
@@ -69,7 +60,7 @@ var addressTxtField = Ti.UI.createTextField({
 });
 
 var whyTxtField = Ti.UI.createTextField({
-	//we are going to abuse the cloud places module cause i can and it works better
+	//we are going to abuse the cloud places module cause i can and it works better for the app
 	hintText : "What your doing?",
 	borderRadius : 10,
 	textAlign : "center",
@@ -100,11 +91,11 @@ addWin.add(addView);
 addWin.add(doneBtn);
 addView.add(infoLbl);
 addView.add(nameTxtField);
-addView.add(addressTxtField);
 addView.add(whyTxtField);
 
 //add our Event listeners
 doneBtn.addEventListener("click", function(){
+	storeInfo();
 	addWin.close();
 });
 

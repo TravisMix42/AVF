@@ -1,0 +1,10 @@
+//functions.js for where you at app
+//Travis Mix
+//march 23, 2014
+
+var sndToCloud = function(){
+	Cloud.Places.create({
+		name : nameTxtField.value,
+		
+	});
+};

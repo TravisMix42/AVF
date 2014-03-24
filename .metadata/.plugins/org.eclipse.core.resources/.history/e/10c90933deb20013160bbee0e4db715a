@@ -1,0 +1,64 @@
+//functions.js for where you at app
+//Travis Mix
+//march 23, 2014
+
+//vars for functions.js
+var lat;
+var lng;
+var head;
+var facing;
+
+var sndToCloud = function(){
+	//get our long lat and compass info
+	Ti.Geolocation.purpose = "Your location information is needed to place you on the map.";
+	Ti.Geolocation.getCurrentPosition(function(e){
+		Ti.Geolocation.purpose = "location service needed for current heading";
+		Ti.Geolocation.showCalibration = false;
+		lat = e.coords.latitude;
+		lng = e.coords.longitude;
+		Ti.Geolocation.getCurrentHeading(function(e){
+			head = e.heading.trueHeading;
+			if(head == 0){
+				facing = 'north';
+			}
+			else if(head > 330 && head <= 30){
+				facing = 'north';
+			}
+			else if(head > 30 && head <= 60){
+				facing = 'northeast';
+			}
+			else if(head > 60 && head <= 120){
+				facing = 'east';
+			}
+			else if(head > 120 && head <= 150){
+				facing = 'southeast';
+			}
+			else if(head > 150 && head <= 210){
+				facing = 'south';
+			}
+			else if(head > 210 && head <= 240){
+				facing = 'southwest';
+			}
+			else if(head > 240 && head <= 300){
+				facing = 'west';
+			}
+			else if(head > 300 && head <= 330){
+				facing = 'northwest';
+			}
+			alert("lat: " + lat + " long: " + lng + " facing: " + facing);
+			//send to the cloud
+			//Cloud.Places.create({
+				//name : nameTxtField.value,
+				//address : addressTxtField.value,
+				//city : whyTxtField.value,
+				//state : facing,
+				//latitude : lat,
+				//longitude : lng
+			//});
+		});
+		
+		
+	});
+	
+	
+};
