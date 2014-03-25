@@ -2,7 +2,7 @@
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.android.installer.launchConfigurationType">
 <stringAttribute key="ATTR_PROJECT_NAME" value="Where You At"/>
 <stringAttribute key="abi" value="armeabi-v7a"/>
-<stringAttribute key="device-id" value="LG-LG870-a2b8dc3"/>
+<stringAttribute key="device-id" value="015480901700A01A"/>
 <stringAttribute key="keystore_alias" value=""/>
 <stringAttribute key="keystore_password" value=""/>
 <stringAttribute key="keystore_path" value=""/>
